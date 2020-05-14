@@ -3,6 +3,7 @@ import Header from "./component/header";
 import HeaderLine from "./component/headline";
 import "./app.scss";
 
+
 function App() {
   return (
     <div className="App">
