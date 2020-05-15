@@ -5,7 +5,7 @@ import React from 'react';
 
 const setUp = (initialState = {})=>{
     const store = testStore(initialState)
-    const wrapper = shallow(<App store = {store} />).childAt(0).dive();
+    const wrapper = shallow(<App store = {store} />).childAt(0).dive(); 
     return wrapper;
 }
 
