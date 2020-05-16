@@ -38,4 +38,23 @@ describe('App Component', () => {
         const component = findByTestAtttribute(wrapper, "appComponent");
         expect(component.length).toBe(1)
     });
+
+
+    it('should hide fetchPosts Buttom', () => {
+       const classInstance = wrapper.instance();
+       classInstance.hideBtnMethod();
+      const appState = classInstance.state.hideBtn;
+
+      expect(appState).toBe(true);
+      
+    });
+
+
+    it('should increment received parameter by 1', () => {
+      const classInstance = wrapper.instance();
+      const value = classInstance.returnValueMethod(6);
+
+      expect(value).toBe(7)
+
+    });
 });
